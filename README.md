@@ -1,6 +1,27 @@
 ## Cart Cave
 Cart Cave is an Ecommerce store with various products. Users have the ability to add an item to the cart and checkout using Stripe for payment processing.
 
+## Instructions
+To set up a local copy, follow these simple steps:  
+```
+1. git clon https://github.com/jscoding10/cart-cave.git  
+2. cd cart-cave  
+3. npm install  
+4. npm start
+5. cd shopping-cart-store
+6. npm install
+7. npm start
+```
+Steps two through four set up the server. The server runs on localhost:4000.  
+
+Steps five through seven set up the client. The client runs on localhost:3000.    
+
+**Stripe Checkout Process**  
+Use 4242 4242 4242 4242 as the credit card number.  
+Use a valid future date for expiration date.  
+Use any three-digit CVC.  
+Use any value to fill out the remaining fields.  
+
 ## Technology Used
 ### Client
 <img align="left" alt="HTML" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" />
@@ -24,24 +45,5 @@ During this project, I learned how to integrate Stripe into an Ecommerce platfor
 ## Improvements
 One improvement would be to have a database containing the array of products and make a fetch request to retrieve the products rather than coding them in a file within the app. Further, on the production version of this application, I would place the Stripe API key in an environment variable. 
 
-## Instructions
-To set up a local copy, follow these simple steps:  
-```
-1. git clon https://github.com/jscoding10/cart-cave.git  
-2. cd cart-cave  
-3. npm install  
-4. npm start
-5. cd shopping-cart-store
-6. npm install
-7. npm start
-```
-Steps two through four set up the server. The server runs on localhost:4000.  
 
-Steps five through seven set up the client. The client runs on localhost:3000.    
-
-**Stripe Checkout Process**  
-Use 4242 4242 4242 4242 as the credit card number.  
-Use a valid future date for expiration date.  
-Use any three-digit CVC.  
-Use any value to fill out the remaining fields.  
 
