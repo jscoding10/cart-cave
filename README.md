@@ -34,6 +34,7 @@ Use any value to fill out the remaining fields.
 The user can add various products to the cart and checkout. The checkout button creates a POST request to the Express server and if the Express server returns a Stripe URL, it redirects the user to the Stripe URL where they can checkout. 
 
 ### Server  
+<img align="left" alt="React" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />  
 <img align="left" alt="React" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" />   
 <br>
 <br>
