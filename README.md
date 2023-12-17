@@ -1,4 +1,4 @@
-## Cart Cave
+## Cart Cave 
 Cart Cave is an Ecommerce store with various products. Users have the ability to add an item to the cart and checkout using Stripe for payment processing.
 
 ## Instructions
