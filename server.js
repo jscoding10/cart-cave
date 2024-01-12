@@ -39,7 +39,7 @@ app.post('/checkout', async (req, res) => {
         // Link if checkout is successful
         success_url: 'http://localhost:3000/success',
         // Link if checkout is cancelled
-        cancel_url: 'http://localhost:3000/cancel'
+        cancel_url: 'https://localhost:3000/cancel'
     });
 
     // Send response - show the user the session Stripe created 
@@ -53,7 +53,7 @@ app.post('/checkout', async (req, res) => {
 app.use(express.static(path.join(__dirname, '/shopping-cart-store/build')));
 
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'shopping-cart-store', 'build', 'app.js'));
+    res.sendFile(path.join(__dirname, 'shopping-cart-store', 'build'));
   })
  
 
