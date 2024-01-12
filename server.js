@@ -3,8 +3,13 @@ const express = require('express');
 // Require CORS - any IP address to access express server
 var cors = require('cors'); 
 // Require Stripe - Initialize Stripe client specifically for account
-const stripe = require('stripe')('sk_test_51OGtnsEM1c8wDhsZBqqzFIt5qddNLAhB7FzbeCnLHYGyFmaSivfzZOkICaPhlp2rpY31MHKnbhAqgNJmoP3Em34H00bVIJpnpr') 
+const stripe = require('stripe')(process.env.STRIPE_API) ;
+// Dot env config
+dotenv.config();
+// Import Path for directory name
+import path from 'path';
 
+const __dirname = path.resolve();
 // Create express server
 const app = express();
 // Middleware
@@ -45,6 +50,13 @@ app.post('/checkout', async (req, res) => {
     }));
 
 });
+
+app.use(express.static(path.join(__dirname, '/shopping-cart-store/build')));
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'shopping-cart-store', 'build', 'app.js'));
+  })
+
 
 // Port for server
 app.listen(4000, () => console.log('Listening on port 4000'));
