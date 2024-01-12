@@ -6,6 +6,7 @@ var cors = require('cors');
 require('dotenv').config()
 const stripe = require('stripe')(process.env.STRIPE_API) 
 
+const path = require('path');
 // Create express server
 const app = express();
 // Middleware
@@ -46,6 +47,14 @@ app.post('/checkout', async (req, res) => {
     }));
 
 });
+
+
+app.use(express.static(path.join(__dirname, '/shopping-cart-store/build')));
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'shopping-cart-store', 'build', 'app.js'));
+  })
+ 
 
 // Port for server
 app.listen(4000, () => console.log('Listening on port 4000'));
