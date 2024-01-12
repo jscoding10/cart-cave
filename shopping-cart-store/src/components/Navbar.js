@@ -18,7 +18,7 @@ function NavbarComponent() {
     // Post request to checkout route of backend; content type is application/json; pass items from cart to backend
     // Response comes back from backend as .json and if the URL exists, forward user to Stripe
     const checkout = async () => {
-        await fetch('http://cart-cave.onrender.com/checkout', {
+        await fetch('http://cart-cave.onrender.com:4000/checkout', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
