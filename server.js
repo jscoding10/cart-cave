@@ -37,9 +37,9 @@ app.post('/checkout', async (req, res) => {
         line_items: lineItems,
         mode: 'payment',
         // Link if checkout is successful
-        success_url: 'http://localhost:3000/success',
+        success_url: 'https://cart-cave.onrender.com/success',
         // Link if checkout is cancelled
-        cancel_url: 'http://localhost:3000/cancel'
+        cancel_url: 'https://cart-cave.onrender.com/cancel'
     });
 
     // Send response - show the user the session Stripe created 
