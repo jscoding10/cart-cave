@@ -11,7 +11,6 @@ import CartProvider from './CartContext';
 function App() {
   return (
     <CartProvider>
-      
         <NavbarComponent></NavbarComponent>
         <Container>
         {/* Routes for different paths - Stripe will redirect user to success or cancel path */}
@@ -23,7 +22,6 @@ function App() {
           </Routes>
         </BrowserRouter>
         </Container>
-     
     </CartProvider>
   );
 }
