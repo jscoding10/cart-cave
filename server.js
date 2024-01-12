@@ -56,7 +56,7 @@ app.use(express.static(path.join(__dirname, '/shopping-cart-store/build')));
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'shopping-cart-store', 'build', 'app.js'));
   })
-
+ 
 
 // Port for server
 app.listen(4000, () => console.log('Listening on port 4000'));
