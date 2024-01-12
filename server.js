@@ -3,9 +3,12 @@ const express = require('express');
 // Require CORS - any IP address to access express server
 var cors = require('cors'); 
 // Require Stripe - Initialize Stripe client specifically for account
+
+// const dotenv = require('dotenv');
+
 const stripe = require('stripe')(process.env.STRIPE_API) ;
 // Dot env config
-dotenv.config();
+require('dotenv').config();
 // Import Path for directory name
 const path = require('path');
 
