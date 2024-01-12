@@ -9,7 +9,7 @@ dotenv.config();
 // Import Path for directory name
 const path = require('path');
 
-const __dirname = path.resolve();
+// const __dirname = path.resolve();
 // Create express server
 const app = express();
 // Middleware
