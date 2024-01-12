@@ -7,7 +7,7 @@ const stripe = require('stripe')(process.env.STRIPE_API) ;
 // Dot env config
 dotenv.config();
 // Import Path for directory name
-import path from 'path';
+const path = require('path');
 
 const __dirname = path.resolve();
 // Create express server
