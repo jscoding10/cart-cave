@@ -52,9 +52,9 @@ app.post('/checkout', async (req, res) => {
 
 app.use(express.static(path.join(__dirname, '/shopping-cart-store/build')));
 
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'shopping-cart-store', 'build'));
-  })
+// app.get('*', (req, res) => {
+//     res.sendFile(path.join(__dirname, 'shopping-cart-store', 'build'));
+//   })
  
 
 // Port for server
