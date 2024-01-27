@@ -1,4 +1,7 @@
 ## Cart Cave 
+
+<img width="70%" alt="Cart Cave" src="https://github.com/jscoding10/cart-cave/assets/147340427/487779a0-14ed-4991-82c5-846ef3875bd3">
+
 **Deployed version:** https://cart-cave.onrender.com/
 <br>
 <br>
