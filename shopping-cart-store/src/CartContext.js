@@ -21,11 +21,9 @@ export function CartProvider({children}) {
     // If .quantity property is undefined function will return 0
     function getProductQuantity(id) {
         const quantity = cartProducts.find(product => product.id === id)?.quantity
-
         if ( quantity === undefined) {
             return 0;
         }
-
         return quantity; 
     }
 
